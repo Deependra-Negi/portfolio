@@ -1,9 +1,10 @@
 import React from 'react'
+import About from './About'
 
 export default function Homepage() {
     return (
         <div>
-            <img src="/under-construction.png" alt="" />
+            <About/>
         </div>
     )
 }
