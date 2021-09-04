@@ -32,7 +32,7 @@ export default function About() {
 
 const SecCont = styled.div`
     color:#0f1108;
-
+    width: 100%;
 `
 const ContBg = styled.div`
     background-image: url('hero3.jpg');
@@ -40,24 +40,53 @@ const ContBg = styled.div`
     background-size: cover;
     background-position-y:center;
     height: 170vh;
-
+    width: 100%;
+    @media (max-width: 1008px) {
+        height: 220vh;
+    }
+    @media (max-width: 768px) {
+        height: 140vh;
+    }
+    @media (max-width: 500px) {
+        height: 130vh;
+    }
 `
 const Cont = styled.div`
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
+    width: 100%;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: auto;
+    }
 `
 
 const Left = styled.div`
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    width: 60%;
     padding: 6rem 4rem;
+    @media (max-width: 768px) {
+        padding: 0.3rem 1rem;
+        width: 100%;
+    }
+    
     div{
         margin: 1rem;
+        @media (max-width: 768px) {
+        margin: 0.3rem;
+    }
     }
 `
 const Header = styled.div`
-    font-size: 7rem;
+    width: 100%;
+    font-size: 5.2rem;
     font-weight: 200;
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
 `
 const Para = styled.div`
     font-size: 1.2rem;
@@ -79,7 +108,11 @@ box-shadow:
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
+  0 100px 80px rgba(0, 0, 0, 0.12);
+@media (max-width: 768px) {
+    margin-top:1.5rem;
+    margin-left: 0.3rem;
+}
 ;
 //apply mask on hover
 :hover{
@@ -96,29 +129,45 @@ box-shadow:
 `
 const Right = styled.div`
 width: 25rem;
-padding-right: 10rem;
 padding-top: 5rem;
+@media (max-width: 768px) {
+    width: 100%;
+    padding: 0 3rem;
+}
+
     img{
         width: 100%;
+        padding: 2rem;
     }
 `
 const AboutCont = styled.div`
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     margin-top: 12rem;
     padding:0 4rem;
+    @media (max-width: 768px) {
+        padding: 0 2rem;
+        margin-top: 6rem;
+    }
 `
 const Heading = styled.div`
+    width: 100%;
     text-align:center ;
     font-size: 2rem;
     font-weight: 300;
     //color: #a0f1a4c7;
 `
 const AboutPara = styled.div`
+    width: 100%;
     font-size: 1rem;
     line-height: 1.8rem;
     margin-top: 2rem;
-    margin-left: 22rem;
-    padding:0 5rem;
+    padding:0 15rem;
     //color: #80AB82;
+    @media (max-width: 1020px) {
+        padding:0 5rem;
+    }
+    @media (max-width: 768px) {
+        padding: 0;
+        line-height: 1.2rem;
+    }
 `

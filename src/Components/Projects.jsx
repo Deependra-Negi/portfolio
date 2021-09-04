@@ -23,7 +23,7 @@ export default function Projects() {
 
 const Cont = styled.div`
     background-color: #cce8ffb8;
-    height: 100vh;
+    //height: 100vh;
     position: relative;
 `
 const Heading = styled.div`

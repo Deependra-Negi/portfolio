@@ -32,6 +32,9 @@ const NavCont = styled.div`
     color:#0f1108;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+        padding: 0;
+    }
 `
 const Logo = styled.div`
     font-family: 'Philosopher', sans-serif;
@@ -45,11 +48,16 @@ const Menu = styled.div`
     line-height: 3.5rem;
     justify-content: space-between;
     div{
+        font-size: 1rem;
         position: relative;
         width: 5rem;
         padding: 0 1rem;
         margin: 0 2rem;
         cursor: pointer;
+        @media (max-width: 768px) {
+        padding: 0;
+        margin: 0%;
+        }
         :hover{
             background: #e7ffed;
             transition: 0.4s;

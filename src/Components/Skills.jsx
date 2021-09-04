@@ -31,7 +31,7 @@ export default function Skills() {
 
 const Cont = styled.div`
     background-color: #a1f5acb8;
-    height: 100vh;
+    padding-bottom: 8rem;
     position: relative;
 `
 const Heading = styled.div`
@@ -46,4 +46,8 @@ const SkillsCont = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @media (max-width: 500px) {
+        margin: 2rem auto;
+        width: 100vw;
+    }
 `
