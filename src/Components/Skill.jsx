@@ -29,6 +29,9 @@ const Cont = styled.div`
     :hover {
     transform: translateY(-10px);
     }
+    @media (max-width: 500px) {
+        margin: 1rem;
+    }
 `
 const ImgCont = styled.div`
     align-self: center;
