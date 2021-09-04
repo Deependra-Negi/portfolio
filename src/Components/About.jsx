@@ -38,17 +38,11 @@ const ContBg = styled.div`
     background-image: url('hero3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y:center;
-    height: 170vh;
+    background-position:100% 30%;
+    margin-bottom: 8rem;
     width: 100%;
-    @media (max-width: 1008px) {
-        height: 220vh;
-    }
     @media (max-width: 768px) {
-        height: 140vh;
-    }
-    @media (max-width: 500px) {
-        height: 130vh;
+        margin-bottom: 3rem;
     }
 `
 const Cont = styled.div`
@@ -142,7 +136,7 @@ padding-top: 5rem;
 `
 const AboutCont = styled.div`
     width: 100%;
-    margin-top: 12rem;
+    margin-top: 10rem;
     padding:0 4rem;
     @media (max-width: 768px) {
         padding: 0 2rem;
