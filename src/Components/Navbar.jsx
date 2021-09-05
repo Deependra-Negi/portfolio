@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default function Navbar() {
+
     return (
         <Nav>
             <NavCont>
                 <Logo>DN</Logo>
                 <Menu>
                     <Projects>Projects</Projects>
-                    <Contact>Contact</Contact>
+                    <Contact onClick={() => { window.location.href="https://www.linkedin.com/in/deependra-negi/" }}>Contact</Contact>
                 </Menu>
             </NavCont>
         </Nav>

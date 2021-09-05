@@ -7,9 +7,9 @@ import Project from './Project'
 export default function Projects() {
     
     const projectData = [
-        { name: "Orbitz.com - clone", url: "orbitz1.png" },
-        { name: "Angel.co - clone", url: "angel1.png" },
-        { name: "Internshala - clone", url: "internshala2.png" }
+        { id: "1", name: "Orbitz.com - clone", img: "orbitz1.png", gh:"https://github.com/Deependra-Negi/orbitz-clone", url:"https://orbitz.netlify.app/" },
+        { id: "2", name: "Angel.co - clone", img: "angel1.png", gh:"https://github.com/vshubhams/project-angel", url:"https://angellist.netlify.app/" },
+        { id: "3", name: "Internshala - clone", img: "internshala2.png", gh:"https://github.com/Pulkit0111/internshala_project", url:"https://pulkit0111.github.io/internshala_project/" }
     ];
 
     return (
