@@ -21,7 +21,7 @@ const Cont = styled.div`
     margin: 2rem;
     border-radius: 0.3rem;
     background-color: #fff;
-    width: 100px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -32,8 +32,8 @@ const Cont = styled.div`
 `
 const ImgCont = styled.div`
     align-self: center;
-    padding: 1rem 0 0 0;
-    max-width: 50px;
+    padding: 0rem 0 0 0;
+    max-width: 100%;
     img{
         width: 100%;
     }

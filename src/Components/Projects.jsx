@@ -1,21 +1,22 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import Skill from './Skill'
+import Project from './Project'
 
 
 
 export default function Projects() {
     
-    const [data, setData] = useState([
-        { name: "Orbitz.com - clone", url: "html.svg" },
-        { name: "angel.co - clone", url: "css.svg" },
-        { name: "Internshala - clone", url: "js.svg" }
-])
+    const projectData = [
+        { name: "Orbitz.com - clone", url: "orbitz1.png" },
+        { name: "angel.co - clone", url: "angel1.png" },
+        { name: "Internshala - clone", url: "internshala2.png" }
+    ];
+
     return (
         <Cont>
             <Heading>Projects</Heading>
             <ProjectsCont>
-                <Skill data={data}/>
+                <Project data={projectData}/>
             </ProjectsCont>
         </Cont>
     )
@@ -23,7 +24,6 @@ export default function Projects() {
 
 const Cont = styled.div`
     background-color: #cce8ffb8;
-    //height: 100vh;
     position: relative;
 `
 const Heading = styled.div`
