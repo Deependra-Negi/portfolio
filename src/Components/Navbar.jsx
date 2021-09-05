@@ -40,7 +40,8 @@ const Logo = styled.div`
     font-family: 'Philosopher', sans-serif;
     font-size:3rem;
     cursor: pointer;
-    color: #80AB82;
+    color:#0f1108;
+    //color: #80AB82;
     `
 const Menu = styled.div`
     display: flex;
