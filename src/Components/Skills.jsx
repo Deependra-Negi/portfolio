@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Skill from './Skill'
 
@@ -6,7 +6,7 @@ import Skill from './Skill'
 
 export default function Skills() {
     
-    const [data, setData] = useState([
+    const skillsData = [
         { name: "HTML", url: "html.svg" },
         { name: "CSS", url: "css.svg" },
         { name: "JavaScript", url: "js.svg" },
@@ -18,12 +18,12 @@ export default function Skills() {
         { name: "MySQL", url: "mysql.svg" },
         { name: "MongoDB", url: "mongo.svg" },
         { name: "Git", url: "git.svg" },
-])
+    ];
     return (
         <Cont>
             <Heading>Skills</Heading>
             <SkillsCont>
-                <Skill data={data}/>
+                <Skill data={skillsData}/>
             </SkillsCont>
         </Cont>
     )
