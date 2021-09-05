@@ -1,28 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const handleCode = ()=>{
-   alert("go to code")
+const handleCode = (el) => {
+    window.location.href = el.gh;
 }
-const handleSite = ()=>{
-   alert("go to Site")
+const handleSite = (el)=>{
+    window.location.href = el.url;
 }
 export default function Project({data}) {
-    return (<>
-        {data.map((el) => (
-        <Cont>
-            <ImgCont>
-                <img src={el.url} alt="" />
-            </ImgCont>
-            <Name>
-                <div className="name" onClick={handleSite}>{el.name}</div>
-                <div className="btn">
-                    <Code onClick={handleCode}>Code</Code>
-                    <Site onClick={handleSite}>Site</Site>
-                </div>
-            </Name>   
-        </Cont>
-        ))}
+    return (
+        <>
+            {data.map((el) => (
+            <Cont key={el.id}>
+                <ImgCont>
+                    <img src={el.img} alt="" />
+                </ImgCont>
+                <Name>
+                    <div className="name" onClick={handleSite}>{el.name}</div>
+                    <div className="btn">
+                        <Code onClick={()=>handleCode(el)}>Code</Code>
+                        <Site onClick={()=>handleSite(el)}>Site</Site>
+                    </div>
+                </Name>   
+            </Cont>
+            ))}
         </>
     )
 }
