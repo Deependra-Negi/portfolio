@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import styled from 'styled-components'
 import Skills from './Skills'
 import Projects from './Projects'
+import Footer from './Footer'
 
 export default function Homepage() {
     return (
@@ -11,7 +12,8 @@ export default function Homepage() {
             <Navbar/>
             <About />
             <Skills />
-            <Projects/>
+            <Projects />
+            <Footer/>
         </HomepageCont>
     )
 }

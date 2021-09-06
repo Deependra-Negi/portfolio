@@ -33,17 +33,17 @@ const Heading = styled.div`
     font-weight: 300;
 `
 const ProjectsCont = styled.div`
-    margin: 5rem auto;
+    margin: 5rem auto 0;
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     @media (max-width: 1264px) {
-        margin: 2rem auto;
+        margin: 2rem auto 0;
         width: 80vw;
     }
     @media (max-width: 768px) {
-        margin: 2rem auto;
+        margin: 2rem auto 0;
         width: 90vw;
     }
     @media (max-width: 500px) {

@@ -10,7 +10,7 @@ export default function About() {
                         <Para>Hi I'm</Para>
                         <Header>Deependra Negi</Header>
                         <Para>Full-Stack Web Developer, living in Uttarakhand(India)</Para>
-                        <ContactBtn>Contact me</ContactBtn>
+                        <ContactBtn> <a href="https://www.linkedin.com/in/deependra-negi/">Contact me</a></ContactBtn>
                     </Left>
                     <Right>
                         {/* <img src="dpkbg.png" alt="" /> */}
@@ -88,7 +88,6 @@ const Para = styled.div`
     //font-weight: 200;
 `
 const ContactBtn = styled.button`
-font-size: 1rem;
 width: 10rem;
 height:3rem;
 background: none;
@@ -103,6 +102,14 @@ box-shadow:
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
+  a{
+      text-decoration: none;
+      font-size: 1rem;
+      color:#0f1108;
+      :visited{
+          color: inherit;
+      }
+  }
 @media (max-width: 768px) {
     margin-top:1.5rem;
     margin-left: 0.3rem;
