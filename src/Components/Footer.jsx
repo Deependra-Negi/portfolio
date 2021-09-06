@@ -30,18 +30,29 @@ const Cont = styled.div`
     width: 100%;
 `
 const FooterCont = styled.div`
-    width: 70%;
+    width: 75%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 1rem 5rem;
-
+    
+    @media (max-width: 768px) {
+        width: 85%;
+        padding: 1rem 2rem;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: 1rem 1.2rem;
+    };
 `
 const IconsCont = styled.div`
     display: flex;
     padding: 1rem;
     justify-content: space-evenly;
+    @media (max-width: 480px) {
+        padding: 1rem 0;
+    };
     .icon{
         color: #fcfcfc;
         font-size: 2rem;
