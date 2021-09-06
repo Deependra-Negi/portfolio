@@ -65,6 +65,8 @@ const Left = styled.div`
     @media (max-width: 768px) {
         padding: 0.3rem 1rem;
         width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
     
     div{
@@ -85,8 +87,12 @@ const Header = styled.div`
 const Para = styled.div`
     font-size: 1.2rem;
     padding-left:0.5rem;
-    //font-weight: 200;
-`
+    @media (max-width: 768px) {
+        padding-left:0.2rem;
+        width: 100%;
+        margin-top: 4rem;
+        font-size: 1rem;
+    }`
 const ContactBtn = styled.button`
 width: 10rem;
 height:3rem;
@@ -111,7 +117,7 @@ box-shadow:
       }
   }
 @media (max-width: 768px) {
-    margin-top:1.5rem;
+    margin-top:2.5rem;
     margin-left: 0.3rem;
 }
 ;

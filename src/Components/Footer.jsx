@@ -36,7 +36,6 @@ const FooterCont = styled.div`
     justify-content: space-between;
     flex-direction: column;
     padding: 1rem 5rem;
-    
     @media (max-width: 768px) {
         width: 85%;
         padding: 1rem 2rem;
