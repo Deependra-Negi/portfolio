@@ -11,7 +11,7 @@ export default function footer() {
         <Cont>
             <FooterCont>
                 <IconsCont>
-                   <a href="https://mail.google.com/mail/916deepaknegi@gmail.com"><EmailIcon className="icon" /></a>
+                    <a href="mailto:916deepaknegi@gmail.com"><EmailIcon className="icon" /></a>
                     <a href="https://twitter.com/Idpknegi"><TwitterIcon className="icon" /></a>
                     <a href="https://www.linkedin.com/in/deependra-negi/"><LinkedInIcon className="icon" /></a>
                     <a href="https://github.com/Deependra-Negi"><GitHubIcon className="icon" /></a>
