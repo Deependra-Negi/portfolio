@@ -16,7 +16,7 @@ export default function Project({data}) {
                     <img src={el.img} alt="" />
                 </ImgCont>
                 <Name>
-                    <div className="name" onClick={handleSite}>{el.name}</div>
+                    <div className="name" onClick={()=>handleSite(el)}>{el.name}</div>
                     <div className="btn">
                         <Code onClick={()=>handleCode(el)}>Code</Code>
                         <Site onClick={()=>handleSite(el)}>Site</Site>
@@ -33,7 +33,7 @@ const Cont = styled.div`
     margin: 2rem;
     border-radius: 0.3rem;
     background-color: #fff;
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -43,13 +43,15 @@ const Cont = styled.div`
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 6px -1px, rgba(0, 0, 0, 0.3) 0px 2px 6px -1px;
     }
     @media (max-width: 1264px) {
-        width: 85%;
+        width: 90%;
     }
     @media (max-width: 768px) {
-        width: 90%;
+        width: 95%;
+        margin: 1rem;
     }
     @media (max-width: 500px) {
         width: 100%;
+        margin: 0.8rem;
     }
 `
 const ImgCont = styled.div`
@@ -66,6 +68,12 @@ const Name = styled.div`
     justify-content: space-between;
     padding: 0 3rem;
     margin-top: 0.5rem;
+    @media (max-width: 768px) {
+        padding: 0 1.5rem;
+    }
+    @media (max-width: 500px) {
+        padding: 0 0.5rem;
+    }
         .name{
             text-align: center;
             cursor: pointer;    
@@ -74,6 +82,7 @@ const Name = styled.div`
             box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
             :hover{
             box-shadow: rgba(62, 62, 105, 0.15) 0px 3px 6px 0px, rgba(37, 37, 37, 0.05) 0px 1px 3px 0px;
+            background-color: #d6ffe0;
             }
         }
         .btn{
@@ -86,14 +95,14 @@ const Code = styled.div`
     border-right: 1px solid gray;
     cursor: pointer;
     :hover{
-        background-image: linear-gradient(to right, #fff,#fafafa, #f7f7f7);
+        background-image: linear-gradient(to right, #fff,#fafafa,#f7f7f7, #eeeeee);
     }
 `
 const Site = styled.div`
     padding: 0.5rem 0.5rem 0 0.5rem;
     cursor: pointer;
     :hover{
-        background-image: linear-gradient(to right, #f7f7f7,#fafafa, #fff);
+        background-image: linear-gradient(to right, #eeeeee,#fafafa,#f7f7f7, #fff);
     }
 `
 
