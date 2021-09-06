@@ -14,7 +14,7 @@ export default function About() {
                     </Left>
                     <Right>
                         {/* <img src="dpkbg.png" alt="" /> */}
-                        <img src="placeholder.svg" alt="" />
+                        {/* <img src="placeholder.svg" alt="" /> */}
                     </Right>
                 </Cont>
                 <AboutCont>
