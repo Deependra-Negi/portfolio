@@ -1,16 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 
 export default function Navbar() {
 
     return (
         <Nav>
             <NavCont>
-                <Logo><Link to='top' smooth={true} duration={1500}>DN</Link></Logo>
+                <Logo onClick={()=> scroll.scrollToTop()}>DN</Logo>
                 <Menu>
-                    <Projects><Link to='projects' smooth={true} duration={1500}> Projects </Link></Projects>
-                    <Contact><Link to='footer' smooth={true} duration={1500}> Contact </Link></Contact>
+                    <Link to='projects' smooth={true} duration={1500}><Projects> Projects </Projects></Link>
+                    <Link to='footer' smooth={true} duration={1500}><Contact> Contact </Contact></Link>
                 </Menu>
             </NavCont>
         </Nav>
@@ -53,7 +54,7 @@ const Menu = styled.div`
     div{
         font-size: 1rem;
         position: relative;
-        width: 5rem;
+        width: 5.6rem;
         padding: 0 1rem;
         margin: 0 2rem;
         cursor: pointer;
