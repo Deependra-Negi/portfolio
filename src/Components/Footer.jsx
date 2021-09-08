@@ -8,7 +8,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 
 export default function footer() {
     return (
-        <Cont>
+        <Cont id='footer'>
             <FooterCont>
                 <IconsCont>
                     <a href="mailto:916deepaknegi@gmail.com"><EmailIcon className="icon" /></a>

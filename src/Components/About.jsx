@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export default function About() {
     return (
-        <SecCont>
+        <SecCont id = 'top'>
             <ContBg>
                 <Cont>
                     <Left>

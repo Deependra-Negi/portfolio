@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-scroll'
 
 export default function Navbar() {
 
     return (
         <Nav>
             <NavCont>
-                <Logo>DN</Logo>
+                <Logo><Link to='top' smooth={true} duration={1500}>DN</Link></Logo>
                 <Menu>
-                    <Projects>Projects</Projects>
-                    <Contact onClick={() => { window.location.href="https://www.linkedin.com/in/deependra-negi/" }}>Contact</Contact>
+                    <Projects><Link to='projects' smooth={true} duration={1500}> Projects </Link></Projects>
+                    <Contact><Link to='footer' smooth={true} duration={1500}> Contact </Link></Contact>
                 </Menu>
             </NavCont>
         </Nav>

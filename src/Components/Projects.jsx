@@ -13,7 +13,7 @@ export default function Projects() {
     ];
 
     return (
-        <Cont>
+        <Cont id='projects'>
             <Heading>Projects</Heading>
             <ProjectsCont>
                 <Project data={projectData}/>
