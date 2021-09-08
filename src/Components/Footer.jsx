@@ -18,7 +18,7 @@ export default function footer() {
                 </IconsCont>
                 <HrLine/>
                 <FooterLine>
-                    <p>No © copyright issues | Made with <FavoriteIcon className="love"/> by Deependra. </p>                    
+                    <p>No © copyright issues | Designed & developed with <FavoriteIcon className="love"/> by Deependra. </p>                    
                 </FooterLine>
             </FooterCont>
         </Cont>
