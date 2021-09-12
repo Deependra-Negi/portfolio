@@ -13,9 +13,9 @@ export default function Skills() {
         { name: "React", url: "react.svg" },
         { name: "Redux", url: "redux.svg" },
         { name: "Materia UI", url: "mui.svg" },
+        { name: "Cypress", url: "cypress.png" },
         { name: "Node", url: "node.svg" },
         { name: "Express", url: "express.svg" },
-        { name: "MySQL", url: "mysql.svg" },
         { name: "MongoDB", url: "mongo.svg" },
         { name: "Git", url: "git.svg" },
     ];
