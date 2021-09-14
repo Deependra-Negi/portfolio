@@ -26,9 +26,9 @@ const Nav = styled.div`
     height: 3.5rem;
     background: rgba(1,1,1,1,1);
     backdrop-filter: saturate(150%) blur(50px);
-    //background-color: #fff;
-    //width: 100vw;
-    //box-shadow: rgba(109, 109, 109, 0.25) 0px 6px 12px -2px, rgba(110, 110, 110, 0.3) 0px 3px 7px -3px;
+    @media (max-width: 768px) {
+        height: 3.5rem;
+    }
 `
 const NavCont = styled.div`
     padding: 0 2rem;
@@ -36,7 +36,7 @@ const NavCont = styled.div`
     display: flex;
     justify-content: space-between;
     @media (max-width: 768px) {
-        padding: 0;
+        padding: 5px 15px;
     }
 `
 const Logo = styled.div`
@@ -44,8 +44,10 @@ const Logo = styled.div`
     font-size:3rem;
     cursor: pointer;
     color:#0f1108;
-    //color: #80AB82;
-    `
+    @media (max-width: 768px) {
+        font-size:2rem;
+        line-height:2.8rem;
+        }    `
 const Menu = styled.div`
     display: flex;
     font-size: 1.3rem;
@@ -61,11 +63,11 @@ const Menu = styled.div`
         @media (max-width: 768px) {
         padding: 0;
         margin: 0%;
+        line-height: 2.8rem;
         }
         :hover{
             background: #e7ffed;
             transition: 0.4s;
-
         }
     }
     div:after{
@@ -83,7 +85,6 @@ const Menu = styled.div`
     }
 `
 const Projects = styled.div`
-
 `
 const Contact = styled.div`
 
