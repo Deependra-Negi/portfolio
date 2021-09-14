@@ -1,18 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-const handleSite = (el)=>{
-    //window.location.href = el.url;
-    <a href="el.url" target="_blank" rel="noopener noreferrer">Site</a>
-}
-export default function Project({data}) {
+export default function Project({ data }) {
+    
     return (
         <>
             {data.map((el) => (
             <Cont key={el.id}>
                 <ImgCont>
-                    <img src={el.img} alt="" />
+                        <img src={el.img} alt="" />
                 </ImgCont>
                 <Name>
                     <div className="name"><a href={el.url} target="_blank" rel="noopener noreferrer">{el.name}</a></div>
