@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const handleCode = (el) => {
-    window.location.href = el.gh;
-}
+
 const handleSite = (el)=>{
-    window.location.href = el.url;
+    //window.location.href = el.url;
+    <a href="el.url" target="_blank" rel="noopener noreferrer">Site</a>
 }
 export default function Project({data}) {
     return (
@@ -16,10 +15,10 @@ export default function Project({data}) {
                     <img src={el.img} alt="" />
                 </ImgCont>
                 <Name>
-                    <div className="name" onClick={()=>handleSite(el)}>{el.name}</div>
+                    <div className="name"><a href={el.url} target="_blank" rel="noopener noreferrer">{el.name}</a></div>
                     <div className="btn">
-                        <Code onClick={()=>handleCode(el)}>Code</Code>
-                        <Site onClick={()=>handleSite(el)}>Site</Site>
+                        <Code><a href={el.gh} target="_blank" rel="noopener noreferrer">Code</a></Code>
+                        <Site><a href={el.url} target="_blank" rel="noopener noreferrer">Site</a></Site>
                     </div>
                 </Name>   
             </Cont>
@@ -84,6 +83,10 @@ const Name = styled.div`
             box-shadow: rgba(62, 62, 105, 0.15) 0px 3px 6px 0px, rgba(37, 37, 37, 0.05) 0px 1px 3px 0px;
             background-color: #d6ffe0;
             }
+            a{
+                text-decoration: none;
+                color: #1f1f1f;
+            }
         }
         .btn{
             display: flex;
@@ -94,6 +97,10 @@ const Code = styled.div`
     padding: 0.5rem 0.6rem 0 0.5rem;
     border-right: 1px solid gray;
     cursor: pointer;
+    a{
+        text-decoration: none;
+        color: #1f1f1f;
+    }
     :hover{
         background-image: linear-gradient(to right, #fff,#fafafa,#f7f7f7, #eeeeee);
     }
@@ -101,6 +108,10 @@ const Code = styled.div`
 const Site = styled.div`
     padding: 0.5rem 0.5rem 0 0.5rem;
     cursor: pointer;
+    a{
+        text-decoration: none;
+        color: #1f1f1f;
+    }
     :hover{
         background-image: linear-gradient(to right, #eeeeee,#fafafa,#f7f7f7, #fff);
     }
