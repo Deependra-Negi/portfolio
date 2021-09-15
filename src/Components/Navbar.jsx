@@ -12,6 +12,7 @@ export default function Navbar() {
                 <Menu>
                     <Link to='projects' smooth={true} duration={1500}><Projects> Projects </Projects></Link>
                     <Link to='footer' smooth={true} duration={1500}><Contact> Contact </Contact></Link>
+                    <Resume> <a href="https://drive.google.com/file/d/1uo1j-qAza8CiaI60gN0nWC614WQ_yhaE/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></Resume>
                 </Menu>
             </NavCont>
         </Nav>
@@ -47,7 +48,8 @@ const Logo = styled.div`
     @media (max-width: 768px) {
         font-size:2rem;
         line-height:2.8rem;
-        }    `
+        }
+    `
 const Menu = styled.div`
     display: flex;
     font-size: 1.3rem;
@@ -85,7 +87,16 @@ const Menu = styled.div`
     }
 `
 const Projects = styled.div`
+@media (max-width: 500px) {
+        display: none;
+        }
 `
 const Contact = styled.div`
 
+`
+const Resume = styled.div`
+    a{
+        text-decoration: none;
+        color:#0f1108;
+    }
 `
