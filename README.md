@@ -1,6 +1,6 @@
 # 👨‍💻 Portfolio
 
-This profile is designed and developed by [Deependra Negi](https://github.com/Deependra-Negi). It consist of the my tech stack, skils , resume and projects. It is responsive and works in all kinds of devices, feel free to fork, and use it.
+This profile is designed and developed by [Deependra Negi](https://github.com/Deependra-Negi). It consist of the my tech stack, skills, projects and resume. It is responsive and works in all kinds of devices, feel free to fork, and use it.
 
 
 ## Deployed link
