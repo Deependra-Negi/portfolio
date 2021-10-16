@@ -12,7 +12,7 @@ export default function Navbar() {
                 <Menu>
                     <Link to='projects' smooth={true} duration={1500}><Projects> Projects </Projects></Link>
                     <Link to='footer' smooth={true} duration={1500}><Contact> Contact </Contact></Link>
-                    <Resume> <a href="https://drive.google.com/file/d/1uo1j-qAza8CiaI60gN0nWC614WQ_yhaE/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></Resume>
+                    <Resume> <a href="https://drive.google.com/file/d/1N6HxOacUuDZna-IB1iK0ZbjRnRjhzw15/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></Resume>
                 </Menu>
             </NavCont>
         </Nav>
