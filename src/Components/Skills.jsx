@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Skill from './Skill'
 
 
-
 export default function Skills() {
     
     const skillsData = [

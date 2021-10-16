@@ -5,15 +5,17 @@ import styled from 'styled-components'
 import Skills from './Skills'
 import Projects from './Projects'
 import Footer from './Footer'
+import Carousel from './Carousel'
 
 export default function Homepage() {
     return (
-        <HomepageCont>
+        <HomepageCont>   
             <Navbar/>
             <About />
             <Skills />
+            {/* <Carousel/> */}
             <Projects />
-            <Footer/>
+            <Footer />
         </HomepageCont>
     )
 }

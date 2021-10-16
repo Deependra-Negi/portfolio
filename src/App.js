@@ -1,9 +1,19 @@
 import './App.css';
 import Homepage from './Components/Homepage';
 import AnimatedCursor from "react-animated-cursor"
+import Loader from './Components/Loader'
+import {useState} from 'react'
 function App() {
+  const [loader, setLoader] = useState(true)
+  
+    setTimeout(function () {
+        setLoader(false)
+      }, 3000)
   return (
     <div className="App">
+      
+      
+      
       <AnimatedCursor
       innerSize={10}
       outerSize={30}
@@ -12,7 +22,7 @@ function App() {
       innerScale={0.6}
       outerScale={0}
     />
-      <Homepage />
+      {loader ? <Loader /> : <Homepage />}
     </div>
   );
 }
