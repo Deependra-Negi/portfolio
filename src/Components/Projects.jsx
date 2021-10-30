@@ -7,6 +7,8 @@ import Project from './Project'
 export default function Projects() {
     
     const projectData = [
+        { id: "1", name: "Linkedin - clone", img: "linkedin-project.png", gh:"https://github.com/Deependra-Negi/LinkedIn-project", url:"https://linkedin-clone-sigma.vercel.app/" },
+        { id: "1", name: "Streamline (Hackathon)", img: "streamline.png", gh:"https://github.com/Deependra-Negi/HighDash_Hackathon-/", url:"https://streamline-acp24.vercel.app/" },
         { id: "1", name: "Orbitz.com - clone", img: "orbitz1.png", gh:"https://github.com/Deependra-Negi/orbitz-clone", url:"https://orbitz.netlify.app/" },
         { id: "2", name: "Angel.co - clone", img: "angel1.png", gh:"https://github.com/Deependra-Negi/project-angel", url:"https://angellist.netlify.app/" },
         { id: "3", name: "Internshala - clone", img: "internshala2.png", gh:"https://github.com/Deependra-Negi/internshala_project", url:"https://pulkit0111.github.io/internshala_project/" }

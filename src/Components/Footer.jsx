@@ -1,27 +1,33 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import styled from 'styled-components'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import Email from './Email'
 
-export default function footer() {
+export default function Footer() {
+
+    const [show, setShow] = useState(false)
     return (
-        <Cont id='footer'>
-            <FooterCont>
-                <IconsCont>
-                    <a href="mailto:916deepaknegi@gmail.com"><EmailIcon className="icon" /></a>
-                    <a href="https://twitter.com/Idpknegi"><TwitterIcon className="icon" /></a>
-                    <a href="https://www.linkedin.com/in/deependra-negi/"><LinkedInIcon className="icon" /></a>
-                    <a href="https://github.com/Deependra-Negi"><GitHubIcon className="icon" /></a>
-                </IconsCont>
-                <HrLine/>
-                <FooterLine>
-                    <p>No © copyright issues | Designed & developed with <FavoriteIcon className="love"/> by Deependra. </p>                    
-                </FooterLine>
-            </FooterCont>
-        </Cont>
+        <>
+            {show?<Email/>:<></>}
+            <Cont id='footer'>
+                <FooterCont>
+                    <IconsCont>
+                        <div onClick={()=>setShow(!show)} ><EmailIcon className="icon" /></div>
+                        <a href="https://twitter.com/deependra_negi1"><TwitterIcon className="icon" /></a>
+                        <a href="https://www.linkedin.com/in/deependra-negi/"><LinkedInIcon className="icon" /></a>
+                        <a href="https://github.com/Deependra-Negi"><GitHubIcon className="icon" /></a>
+                    </IconsCont>
+                    <HrLine/>
+                    <FooterLine>
+                        <p>No © copyright issues | Designed & developed with <FavoriteIcon className="love"/> by Deependra. </p>                    
+                    </FooterLine>
+                </FooterCont>
+                </Cont>
+            </>
     )
 }
 
