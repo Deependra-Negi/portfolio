@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "as": "^0.4.1",
     "emailjs-com": "^3.2.0",
     "kursor": "^0.1.6",
     "material-design-icons-iconfont": "^6.1.0",
@@ -21,6 +22,8 @@
     "react-video-js-player": "^1.1.1",
     "sass": "^1.42.1",
     "styled-components": "^5.3.1",
+    "uuid": "^8.3.2",
+    "v4": "0.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Project from './Project'
-
-
+import {v4 as uuid} from "uuid"
 
 export default function Projects() {
     
@@ -15,7 +14,7 @@ export default function Projects() {
     ];
 
     return (
-        <Cont id='projects'>
+        <Cont id='projects' key={uuid()}>
             <Heading>Projects</Heading>
             <ProjectsCont>
                 <Project data={projectData}/>

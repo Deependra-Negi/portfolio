@@ -2,8 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default function About() {
+
+    const handleScroll = (e) => {
+        const x = e.target.scrollTop;
+        console.log('scrolling', x)
+        let offset = window.pageYOffset;
+        console.log(offset)
+    }
     return (
-        <SecCont id = 'top'>
+        <SecCont id = 'top' onScroll={()=>alert("Table Scrolled")}>
             <ContBg>
                 <Cont>
                     <Left>
@@ -39,8 +46,9 @@ const ContBg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position:100% 30%;
-    margin-bottom: 8rem;
+    padding-bottom: 8rem;
     width: 100%;
+    //background-attachment: fixed;
     @media (max-width: 768px) {
         margin-bottom: 3rem;
     }

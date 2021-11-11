@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import {v4 as uuid} from 'uuid'
 
 export default function Project({ data }) {
     
     return (
         <>
             {data.map((el) => (
-            <Cont key={el.id}>
+            <Cont key={uuid()}>
                 <ImgCont>
                         <img src={el.img} alt="" />
                 </ImgCont>

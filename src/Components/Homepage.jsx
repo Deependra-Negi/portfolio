@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Skills from './Skills'
 import Projects from './Projects'
 import Footer from './Footer'
-import Carousel from './Carousel'
+// import Carousel from './Carousel'
 
 export default function Homepage() {
     return (
