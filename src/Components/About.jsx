@@ -1,14 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 export default function About() {
 
-    const handleScroll = (e) => {
-        const x = e.target.scrollTop;
-        console.log('scrolling', x)
-        let offset = window.pageYOffset;
-        console.log(offset)
-    }
     return (
         <SecCont id = 'top' onScroll={()=>alert("Table Scrolled")}>
             <ContBg>
@@ -17,7 +12,7 @@ export default function About() {
                         <Para>Hi I'm</Para>
                         <Header>Deependra Negi</Header>
                         <Para>Full-Stack Web Developer, living in Uttarakhand(India)</Para>
-                        <ContactBtn> <a href="https://www.linkedin.com/in/deependra-negi/">Contact me</a></ContactBtn>
+                        <Link to='footer' smooth={true} duration={1500}><ContactBtn>Contact me</ContactBtn></Link>
                     </Left>
                     <Right>
                         {/* <img src="dpkbg.png" alt="" /> */}

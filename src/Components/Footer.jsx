@@ -10,6 +10,7 @@ import Email from './Email'
 export default function Footer() {
 
     const [show, setShow] = useState(false)
+
     return (
         <>
             {show?<Email/>:<></>}
